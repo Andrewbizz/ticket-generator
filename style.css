@@ -1,0 +1,241 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap'); 
+
+
+body{
+                    background-color: rgb(161, 161, 161);
+}
+
+ *,
+ *::before,
+ *::after {
+                     box-sizing: border-box;
+                     margin: 0;
+                     padding: 0;
+                     transition: 0.2s;
+                     font-family: "Inconsolata", sans-serif;
+
+ }
+ /* Responsive images */
+ img {
+                     max-width: 100%;
+                     height: auto;
+                     display: block;
+ }
+
+ /* Links */
+ a {
+                     color: inherit;
+                     text-decoration: none;
+ }
+
+ /* Headings */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+                     font-weight: 600;
+                     margin-bottom: 0em;
+ }
+
+
+ h1 {
+                     font-size: 20px;
+ }
+
+
+
+
+
+ :root {
+                     /* Light mode colors */
+                     --background-color: #ffffff;
+                     --text-color: #333333;
+                     --primary-color: hsl(3, 77%, 44%);
+                     --header-bg-color: #eeeeee;
+                     --card-bg-color: #f9f9f9;
+                     --shadow-color: rgba(0, 0, 0, 0.1);
+                     --btn-color: rgb(255, 255, 255);
+                     --border-color: hsl(0, 0%, 78%);
+                     --body-background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+                     --btn-bg: hsl(0, 0%, 93%);
+                     --btn-bg-hover: hsl(0, 2%, 84%);
+
+                     --logo-color: #091540;
+
+ }
+
+
+
+.innerCont{
+                    background-image: url(assets/images/background-desktop.png);
+                    min-height: 100vh; 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    color: hsl(0, 0%, 100%);
+                    position: relative;
+}
+
+.innerContafter{
+                    content: '';
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                     align-items: center; 
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(assets/images/pattern-lines.svg);
+                    z-index: 1;
+                    background-position: center;
+                    background-size: cover;
+                    gap: 2rem;
+                    padding-top: 2rem;
+}
+
+.logoCont{
+                    background-image: url(assets/images/logo-full.svg);
+                    height: 40px;
+                    width:  240px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+}
+
+.header{
+                    font-size: 3rem;
+                    text-align: center;
+                    max-width: 700px;
+                    font-weight: 700;
+}
+
+.innerHeader{
+                    text-align: center;
+                    color: hsl(252, 6%, 83%);
+                    font-size: 20px;
+}
+
+.innerRight{
+                    height: 200px;
+                    max-width: 400px;
+                    width: 30%;
+                    background-image: url(assets/images/pattern-squiggly-line-top.svg);
+                    background-size: 100%;
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: 0;
+}
+
+.innerLeft{
+                      height: 500px; 
+                    width: 50%;
+                    background-image: url(assets/images/pattern-squiggly-line-bottom-desktop.svg);
+                    background-size: 100%;
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+}
+
+form{
+                    width: 400px; 
+}
+
+.uploadAvatar{
+                    height: 150px;
+                    width: 100%;
+                    background-color: rgba(48, 48, 48, 0.205);
+                    border-style: dashed ;
+                    border-width:1px ;
+                    margin-top: 6px;
+                    border-radius: 20px;
+                    position: relative;
+}
+
+
+.invUpload{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-color: red;
+                    opacity: 0;
+}
+
+.uploadAvatarbefore{
+                    content: '';
+                    height: 60px;
+                    width: 60px;
+                    position: absolute;
+                    opacity: 1;
+                    z-index: 99;
+                    background-color: rgba(129, 129, 129, 0.363);
+                    border-radius: 10px;
+                    left: 0;
+                    right: 0;
+                    top: 20px;
+                    margin: auto;
+                    background-image: url(assets/images/icon-upload.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-size: 70%;
+                    border: solid 1px rgba(255, 255, 255, 0.288);
+                    background-position: center;
+}
+
+.makeBigger{
+                    background-size: cover;
+}
+
+
+.inpPut{
+                    position: absolute;
+                    top: 100px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 80%;
+                    text-align: center;
+}
+
+.subBtn{
+                    background-color: hsl(7, 71%, 60%);
+                    border-radius: 10px;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 12px;
+                    color: hsl(248, 70%, 10%);
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin-top: 26px;
+
+}
+
+
+.eachInput{
+                    width: 100%;
+                    font-size: 20px;
+                    padding: 10px;
+                    border-radius: 10px; 
+                    background-color: #33333354;
+                    outline: none;
+                    color: #fff;
+                    margin-top: 10px;
+                    border: solid 1px rgba(194, 194, 194, 0.726);
+
+}
+
+.layInput{
+                    margin-top: 20px;
+}
+
+.ImgerrorCont{
+                    display: flex;
+                    font-size: 13px;
+                    margin-top: 10px;
+}
