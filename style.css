@@ -71,7 +71,8 @@
 
  .innerCont {
                      background-image: url(assets/images/background-desktop.png);
-                     min-height: 110vh;
+                     height: 110vh;
+                     min-height: 900px; 
                      display: flex;
                      flex-direction: column;
                      align-items: center;
