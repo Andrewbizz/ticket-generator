@@ -11,7 +11,18 @@ const maindiv = document.querySelector(".float1");
 const maindiv2 = document.querySelector(".float2");
 const input = document.querySelector(".inpPut");
 const ReplaceBtn = document.querySelector(".ReplaceBtn");
- 
+const fullnameDiv = document.querySelectorAll(".fullNameDiv");
+const mailDiv = document.querySelector(".emaildiv");
+const gitDiv = document.querySelector(".gitDiv");
+const today = new Date().toLocaleDateString("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+});
+
+const TickNum = document.querySelector('.tickNum')
+const dater = document.querySelector(".dateCont");
+const sixDigitNumber = generateRandom6DigitNumber();
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -35,7 +46,7 @@ imagUpload.addEventListener("change", function (event) {
     input.remove();
   }
 
-  ReplaceBtn.classList.add('show')
+  ReplaceBtn.classList.add("show");
 
   reader.readAsDataURL(file);
 });
@@ -47,7 +58,7 @@ eachInput.forEach((each, i) => {
 });
 
 const validateForm = function () {
-    let isValid = true; // reset validation state each time
+  let isValid = true; // reset validation state each time
 
   const validator = function (inpName, errIndex, errorMessage) {
     const inpErr = eachInput[errIndex].querySelector(".errorMessage");
@@ -86,10 +97,23 @@ const validateForm = function () {
   if (isValid === true) {
     populateHtml();
   }
- 
 };
+
+function generateRandom6DigitNumber() {
+  // Generate a random number between 100000 (inclusive) and 999999 (inclusive)
+  const randomNumber = Math.floor(100000 + Math.random() * 900000);
+  return randomNumber;
+}
 
 const populateHtml = function () {
   maindiv.style.display = "none";
-  maindiv2.style.display= 'block';
+  maindiv2.style.display = "flex";
+
+  fullnameDiv.forEach((each) => {
+    each.textContent = fullNameInp.value;
+  });
+  gitDiv.textContent = gitUnameInp.value;
+  mailDiv.textContent = mailInp.value;
+  dater.textContent = today;
+  TickNum.textContent = sixDigitNumber
 };

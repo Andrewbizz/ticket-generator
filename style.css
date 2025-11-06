@@ -1,10 +1,9 @@
- 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 
-body{
-                    background-color: rgb(161, 161, 161);
-}
+ body {
+                     background-color: rgb(161, 161, 161);
+ }
 
  *,
  *::before,
@@ -16,6 +15,7 @@ body{
                      font-family: "Inconsolata", sans-serif;
 
  }
+
  /* Responsive images */
  img {
                      max-width: 100%;
@@ -69,297 +69,366 @@ body{
 
 
 
-.innerCont{
-                    background-image: url(assets/images/background-desktop.png);
-                    min-height: 100vh; 
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    color: hsl(0, 0%, 100%);
-                    position: relative;
-}
+ .innerCont {
+                     background-image: url(assets/images/background-desktop.png);
+                     min-height: 110vh;
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     justify-content: center;
+                     color: hsl(0, 0%, 100%);
+                     position: relative;
+ }
 
-.innerContafter{
-                    content: '';
-                    position: absolute;
-                    display: flex;
-                    flex-direction: column;
-                     align-items: center; 
-                    height: 100%;
-                    width: 100%;
-                    background-image: url(assets/images/pattern-lines.svg);
-                    z-index: 1;
-                    background-position: center;
-                    background-size: cover;
-                    gap: 2rem;
-                    padding-top: 2rem;
-}
+ .innerContafter {
+                     content: '';
+                     position: absolute;
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     height: 100%;
+                     width: 100%;
+                     background-image: url(assets/images/pattern-lines.svg);
+                     z-index: 1;
+                     background-position: center;
+                     background-size: cover;
+                     gap: 2rem;
+                     padding-top: 2rem;
+ }
 
-.logoCont{
-                    background-image: url(assets/images/logo-full.svg);
-                    height: 40px;
-                    width:  240px;
-                    background-repeat: no-repeat;
-                    background-position: center;
+ .logoCont {
+                     background-image: url(assets/images/logo-full.svg);
+                     height: 40px;
+                     width: 240px;
+                     background-repeat: no-repeat;
+                     background-position: center;
 
-}
+ }
 
-.header{
-                    font-size: 3rem;
-                    text-align: center;
-                    max-width: 700px;
-                    font-weight: 700;
-}
+ .header {
+                     font-size: 3rem;
+                     text-align: center;
+                     max-width: 700px;
+                     font-weight: 700;
+ }
 
-.innerHeader{
-                    text-align: center;
-                    color: hsl(252, 6%, 83%);
-                    font-size: 20px;
-}
+ .innerHeader {
+                     text-align: center;
+                     color: hsl(252, 6%, 83%);
+                     font-size: 20px;
+ }
 
-.innerRight{
-                    height: 200px;
-                    max-width: 400px;
-                    width: 30%;
-                    background-image: url(assets/images/pattern-squiggly-line-top.svg);
-                    background-size: 100%;
-                    background-position: top;
-                    background-repeat: no-repeat;
-                    position: absolute;
-                    right: 0;
-}
+ .innerRight {
+                     height: 200px;
+                     max-width: 400px;
+                     width: 30%;
+                     background-image: url(assets/images/pattern-squiggly-line-top.svg);
+                     background-size: 100%;
+                     background-position: top;
+                     background-repeat: no-repeat;
+                     position: absolute;
+                     right: 0;
+ }
 
-.innerLeft{
-                      height: 500px; 
-                    width: 50%;
-                    background-image: url(assets/images/pattern-squiggly-line-bottom-desktop.svg);
-                    background-size: 100%;
-                    background-position: top;
-                    background-repeat: no-repeat;
-                    position: absolute;
-                    left: 0;
-                    z-index: -1;
-                    bottom: 0;
-}
+ .innerLeft {
+                     height: 500px;
+                     width: 50%;
+                     background-image: url(assets/images/pattern-squiggly-line-bottom-desktop.svg);
+                     background-size: 100%;
+                     background-position: top;
+                     background-repeat: no-repeat;
+                     position: absolute;
+                     left: 0;
+                     z-index: -1;
+                     bottom: 0;
+ }
 
-form{
-                    width: 400px; 
-}
+ form {
+                     width: 400px;
+ }
 
-.uploadAvatar{
-                    height: 150px;
-                    width: 100%;
-                    background-color: rgba(48, 48, 48, 0.205);
-                    border-style: dashed ;
-                    border-width:1px ;
-                    margin-top: 6px;
-                    border-radius: 20px;
-                    position: relative;
-}
-
-
-.invUpload{
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    background-color: red;
-                    opacity: 0;
-                    z-index: 999;
-}
-
-.uploadAvatarbefore{
-                   
-                    height: 60px;
-                    width: 60px;
-                    position: absolute;
-                    opacity: 1;
-                    z-index: 99;
-                    background-color: rgba(129, 129, 129, 0.363);
-                    border-radius: 10px;
-                    left: 0;
-                    right: 0;
-                    top: 20px;
-                    margin: auto;
-                    background-image: url(assets/images/icon-upload.svg);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-size: 70%;
-                    border: solid 1px rgba(255, 255, 255, 0.288);
-                    background-position: center;
-}
+ .uploadAvatar {
+                     height: 150px;
+                     width: 100%;
+                     background-color: rgba(48, 48, 48, 0.205);
+                     border-style: dashed;
+                     border-width: 1px;
+                     margin-top: 6px;
+                     border-radius: 20px;
+                     position: relative;
+ }
 
 
-.uploadBef{
-                     position: relative; top: 0; margin:unset; 
-}
+ .invUpload {
+                     position: absolute;
+                     height: 100%;
+                     width: 100%;
+                     background-color: red;
+                     opacity: 0;
+                     z-index: 999;
+ }
+
+ .uploadAvatarbefore {
+
+                     height: 60px;
+                     width: 60px;
+                     position: absolute;
+                     opacity: 1;
+                     z-index: 99;
+                     background-color: rgba(129, 129, 129, 0.363);
+                     border-radius: 10px;
+                     left: 0;
+                     right: 0;
+                     top: 20px;
+                     margin: auto;
+                     background-image: url(assets/images/icon-upload.svg);
+                     background-size: contain;
+                     background-repeat: no-repeat;
+                     background-size: 70%;
+                     border: solid 1px rgba(255, 255, 255, 0.288);
+                     background-position: center;
+ }
 
 
-.makeBigger{
-                    background-size: cover;
-}
+ .uploadBef {
+                     position: relative;
+                     top: 0;
+                     margin: unset;
+ }
 
 
-.inpPut{
-                    position: absolute;
-                    top: 100px;
-                    left: 0;
-                    right: 0;
-                    margin: auto;
-                    width: 80%;
-                    text-align: center;
-}
-
-.subBtn{
-                    background-color: hsl(7, 71%, 60%);
-                    border-radius: 10px;
-                    border: none;
-                    outline: none;
-                    width: 100%;
-                    padding: 12px;
-                    color: hsl(248, 70%, 10%);
-                    cursor: pointer;
-                    font-weight: bold;
-                    font-size: 20px;
-                    margin-top: 26px;
-
-}
+ .makeBigger {
+                     background-size: cover;
+ }
 
 
-.eachInput{
-                    width: 100%;
-                    font-size: 20px;
-                    padding: 10px;
-                    border-radius: 10px; 
-                    background-color: #33333354;
-                    outline: none;
-                    color: #fff;
-                    margin-top: 10px;
-                    border: solid 1px rgba(194, 194, 194, 0.726);
+ .inpPut {
+                     position: absolute;
+                     top: 100px;
+                     left: 0;
+                     right: 0;
+                     margin: auto;
+                     width: 80%;
+                     text-align: center;
+ }
 
-}
+ .subBtn {
+                     background-color: hsl(7, 71%, 60%);
+                     border-radius: 10px;
+                     border: none;
+                     outline: none;
+                     width: 100%;
+                     padding: 12px;
+                     color: hsl(248, 70%, 10%);
+                     cursor: pointer;
+                     font-weight: bold;
+                     font-size: 20px;
+                     margin-top: 26px;
 
-.layInput{
-                    margin-top: 20px;
-}
-
-.ImgerrorCont{
-                    display: flex;
-                    font-size: 13px;
-                    margin-top: 10px;
-}
-
-.errorMessage{
-                    color: red;
-                    font-size: 13px;
-}
+ }
 
 
-.ReplaceBtn{
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    bottom: 20px;
-                    margin: auto;
-                    width: 80px;
-                    text-align: center;
-                    border-radius: 10px;
-                    border: solid 1px white;
-                    z-index: -9;
-                    opacity: 0;
-}
+ .eachInput {
+                     width: 100%;
+                     font-size: 20px;
+                     padding: 10px;
+                     border-radius: 10px;
+                     background-color: #33333354;
+                     outline: none;
+                     color: #fff;
+                     margin-top: 10px;
+                     border: solid 1px rgba(194, 194, 194, 0.726);
 
-.show{
-                    opacity: 1; 
-                    cursor: pointer;
-}
+ }
 
-.visilate{
-                    opacity: 1;
-                    z-index: 9999;
-}
+ .layInput {
+                     margin-top: 20px;
+ }
 
+ .ImgerrorCont {
+                     display: flex;
+                     font-size: 13px;
+                     margin-top: 10px;
+ }
+
+ .errorMessage {
+                     color: red;
+                     font-size: 13px;
+ }
+
+
+ .ReplaceBtn {
+                     position: absolute;
+                     left: 0;
+                     right: 0;
+                     bottom: 20px;
+                     margin: auto;
+                     width: 80px;
+                     text-align: center;
+                     border-radius: 10px;
+                     border: solid 1px white;
+                     z-index: -9;
+                     opacity: 0;
+ }
+
+ .show {
+                     opacity: 1;
+                     cursor: pointer;
+ }
+
+ .visilate {
+                     opacity: 1;
+                     z-index: 9999;
+ }
+
+
+ .loved {
+                     background-image: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+                     /* Define your gradient colors and direction */
+                     -webkit-background-clip: text;
+                     /* Clip the background to the shape of the text (for WebKit browsers) */
+                     background-clip: text;
+                     /* Standard property */
+                     color: transparent;/
+ }
+
+
+ .confCard {
+                     height: 185px;
+                     width: 400px;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: space-between;
+                     background-repeat: no-repeat;
+                     background-position: center;
+                     padding: 15px;
+                     margin: auto;
+                     background-size: contain;
+                     position: relative;
+                     background-image: url(assets/images/pattern-ticket.svg);
+ }
+
+ .halfLog {
+                     height: 50px;
+                     width: 50px;
+                     background-image: url(assets/images/logo-mark.svg);
+                     background-repeat: no-repeat;
+                     background-position: center;
+ }
+
+ .logoCont2 {
+                     display: flex;
+                     align-items: center;
+                     gap: 10px;
+ }
+
+ .headerx {
+                     font-weight: bold;
+                     font-size: 26px;
+ }
+
+ .header2 {
+                     font-size: 24px;
+                     font-weight: bold;
+                     text-align: center;
+ }
+
+ .smallText {
+                     font-size: 10px;
+                     color: hsl(245, 15%, 58%);
+                     margin-top: 10px;
+ }
+
+ .rotText {
+                     transform: rotate(90deg);
+                     position: absolute;
+                     height: 20px;
+                     right: 10px;
+                     top: 0;
+                     bottom: 0;
+                     margin: auto;
+                     color: hsl(245, 15%, 58%);
+
+                     /* background-color: red; */
+ }
+
+
+ .confParag {
+                     text-align: center;
+                     font-size: 20px;
+                     max-width: 350px;
+                     margin: auto;
+                     color: hsl(245, 15%, 58%);
+
+
+ }
+
+ .float2 {
+
+                     flex-direction: column;
+                     gap: 80px;
+                     display: none;
+ }
+
+ .float1 {
+                     display: flex;
+                     flex-direction: column;
+                     gap: 30px;
+ }
+
+ .generateForm {
+                     margin: auto;
+ }
+
+ .emaildiv {
+                     color: hsl(7, 71%, 60%);
+ }
+
+
+ @media (max-width: 600px) {
+
+                     /* CONF CARD: mobile responsive tweaks */
+                     .confCard {
+                                         width: 320px;
+                                         height: 150px;
+                     }
+
+                     @media (max-width: 420px) {
+                                         form {
+                                                             width: 90%;
+                                                             margin: auto;
+                                         }
+
+                                       
+
+                                         .halfLog {
+                                                             height: 36px;
+                                                             width: 36px;
+                                         }
+
+                                         .subBtn {
+                                                             font-size: 16px;
+                                                             padding: 8px;
+                                         }
+                     }
+
+                     @media (max-width: 360px) {
+                                         .header {
+                                                             font-size: 1.4rem;
+                                                             max-width: 300px;
+                                                             margin: auto;
+                                         }
+
+                                         .header2 {
+                                                             font-size: 1.4rem;
+                                                             max-width: 300px;
+                                                             margin: auto;
+                                         }
  
 
-
-
-.confCard{
-                    height: 185px;
-                    width: 400px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    background-repeat: no-repeat;
-                    background-position: center; 
-                    padding: 15px;
-                    margin: auto;
-                    background-size: contain;
-                    position: relative;
-                    background-image: url(assets/images/pattern-ticket.svg);
-}
-
-.halfLog{
-                    height: 50px;
-                    width: 50px;
-                    background-image: url(assets/images/logo-mark.svg);
-                    background-repeat: no-repeat;
-                    background-position: center;
-}
-
-.logoCont2{
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-}
-
-.headerx{
-                    font-weight: bold;
-                    font-size: 26px;
-}
-
-.smallText{
-                    font-size: 10px;
-                    color: hsl(245, 15%, 58%);
-                    margin-top: 10px;
-}
-
-.rotText{
-                    transform: rotate(90deg);
-                    position: absolute;
-                    height: 20px;
-                    right: 10px;
-                    top: 0;
-                    bottom: 0;
-                    margin: auto;
-                    color: hsl(245, 15%, 58%);
-
-                    /* background-color: red; */
-}
-
-
-.confParag{
-                    text-align: center;
-                    font-size: 20px;
-                    max-width: 350px;
-                    margin: auto;
-                    color: hsl(245, 15%, 58%);
-
-
-}
-
-.float2{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 80px;
-                    display: none;
-}
-
-.float1{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 30px;
-}
-
-.generateForm{ 
-                    margin: auto;
-}
+                                         .subBtn {
+                                                             font-size: 16px;
+                                                             padding: 8px;
+                                         }
+                     }
+ }
