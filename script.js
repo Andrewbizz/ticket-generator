@@ -2,31 +2,94 @@ const form = document.querySelector(".generateForm");
 const eachInput = document.querySelectorAll(".layInput");
 const imagUpload = document.querySelector(".invUpload");
 const Imgerror = document.querySelector(".Imgerror");
-const avatar = document.querySelector(".uploadAvatarbefore");
+const avatar = document.querySelectorAll(".uploadAvatarbefore");
+const fullNameInp = document.querySelector("#fullName");
+const mailInp = document.querySelector("#emailAddress");
+const gitUnameInp = document.querySelector("#gitUname");
+const imgErr = document.querySelector(".Imgerror");
+const maindiv = document.querySelector(".float1");
+const maindiv2 = document.querySelector(".float2");
+const input = document.querySelector(".inpPut");
+const ReplaceBtn = document.querySelector(".ReplaceBtn");
+ 
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
   validateForm();
 });
+
 imagUpload.addEventListener("change", function (event) {
   const file = event.target.files[0];
   if (!file) return;
 
   const reader = new FileReader();
   reader.onload = function (ev) {
-    avatar.style.backgroundImage = `url(${ev.target.result})`;
-    avatar.classList.add('makeBigger')
+    avatar.forEach((av) => {
+      av.style.backgroundImage = `url(${ev.target.result})`;
+      av.classList.add("makeBigger");
+    });
   };
+
+  if (input) {
+    input.remove();
+  }
+
+  ReplaceBtn.classList.add('show')
+
   reader.readAsDataURL(file);
 });
 
-
-const validateForm = function () {
-  console.log("this a test ");
-};
-
-eachInput.forEach((each) => {
+eachInput.forEach((each, i) => {
   const htmlString = '<div class="errorMessage">  </div>';
 
   each.insertAdjacentHTML("beforeend", htmlString);
 });
+
+const validateForm = function () {
+    let isValid = true; // reset validation state each time
+
+  const validator = function (inpName, errIndex, errorMessage) {
+    const inpErr = eachInput[errIndex].querySelector(".errorMessage");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (inpName.value === "") {
+      inpErr.textContent = errorMessage;
+      isValid = false;
+      return;
+    } else {
+      inpErr.textContent = "";
+    }
+
+    if (inpName.id === "emailAddress") {
+      if (emailRegex.test(inpName.value)) {
+        inpErr.textContent = ``;
+      } else {
+        inpErr.textContent = `that's not an email`;
+        isValid = false;
+      }
+    }
+  };
+
+  validator(fullNameInp, 0, "Full Name cannot be empty");
+  validator(mailInp, 1, "Mail cannot be empty");
+  validator(gitUnameInp, 2, "git Username cannot be empty");
+
+  if (imagUpload.value === "") {
+    imgErr.style.color = "red";
+
+    isValid = false;
+  } else {
+    imgErr.style.color = "white";
+  }
+
+  if (isValid === true) {
+    populateHtml();
+  }
+ 
+};
+
+const populateHtml = function () {
+  maindiv.style.display = "none";
+  maindiv2.style.display= 'block';
+};

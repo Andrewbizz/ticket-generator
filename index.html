@@ -17,10 +17,14 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      color: #fff;
+      position: absolute;
+      z-index: 9;
+      bottom: 10px;
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      color: hsl(17, 100%, 50%);
     }
   </style>
 </head>
@@ -35,85 +39,138 @@
 
       </div>
 
-      <div class="header">
+
+      <div class="float1">
+        <div class="header">
 
 
-        Your Journey to Coding Conf 2025 Starts Here!
-      </div>
+          Your Journey to Coding Conf 2025 Starts Here!
+        </div>
 
 
-      <div class="innerHeader">
-        Secure your spot at next year's biggest coding conference.
-
-
-      </div>
-
-
-      <form class="generateForm" method="post" enctype="multipart/form-data">
-        <label class="label" for="imageUpload"> Upload Avatar</label><br>
-
-
-        <div class="uploadAvatar">
-
-
-          <div class="uploadAvatarbefore"></div>
-
-          <input class="invUpload" type="file" id="imageUpload" name="image" accept="image/*">
-          <p class="inpPut">Drag and drop or click to Upload</p>
+        <div class="innerHeader">
+          Secure your spot at next year's biggest coding conference.
 
 
         </div>
-        <div class="ImgerrorCont"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                <path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round"
-                  d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z" />
-                <path fill="#D1D0D5" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
-                <path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round"
-                  d="M8.004 10.462V7.596M8 5.569v-.042" />
-              </svg>
-            
 
-              <p class="Imgerror">
 
-                Upload your photo (JPG or PNG, max size: 500KB).
-              </p>
+        <form novalidate class="generateForm">
+          <label class="label" for="imageUpload"> Upload Avatar</label><br>
+
+
+          <div class="uploadAvatar">
+
+
+            <div class="uploadAvatarbefore"></div>
+
+            <input class="invUpload" type="file" id="imageUpload" name="image" accept="image/*">
+            <p class="inpPut">Drag and drop or click to Upload</p>
+
+            <div class="ReplaceBtn">Replace</div>
+
+
+          </div>
+          <div class="ImgerrorCont"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+              viewBox="0 0 16 16">
+              <path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round"
+                d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z" />
+              <path fill="#D1D0D5" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+              <path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round"
+                d="M8.004 10.462V7.596M8 5.569v-.042" />
+            </svg>
+
+
+            <p class="Imgerror">
+
+              Upload your photo (JPG or PNG, max size: 500KB).
+            </p>
+          </div>
+
+
+
+          <div class="layInput">
+            <label class="label" for="fullName"> Full Name</label><br>
+            <input type="text" name="" class="eachInput" id="fullName">
+
+          </div>
+
+
+
+          <div class="layInput">
+            <label class="label" for="emailAddress"> Email Address</label><br>
+            <input type="email" name="" class="eachInput" id="emailAddress">
+          </div>
+
+          <div class="layInput">
+            <label class="label" for="emailAddress"> Github Username</label><br>
+            <input type="text" name="" class="eachInput" id="gitUname">
+          </div>
+
+
+          <input class="subBtn" type="submit" value="Generate My Ticket">
+        </form>
+
+      </div>
+
+
+      <div class="float2">
+
+        <div class="header">
+                  Congrats, Ezeani Andrew! Your ticket is ready.
+
+     
+        </div>
+
+        <div class="confParag">
+
+             We've emailed your ticket to ezeaniandrew8197@gmail.com and will send updates in the run up to the event.
+
+        </div>
+
+        <div class="confCard">
+
+
+          <div class="logoCont2">
+            <div class="halfLog">
+
+            </div>
+            <div>
+              <div class="headerx">Coding Conf</div>
+              <div class="smallText">Jan 31, 2025 / Austin, TX</div>
+
             </div>
 
+          </div>
+
+          <div class="logoCont2">
+            <div class="uploadAvatarbefore uploadBef"></div>
 
 
-        <div class="layInput">
-          <label class="label" for="fullName"> Full Name</label><br>
-          <input type="text" name="" class="eachInput" id="fullName">
+
+            <div>
+              <div>Jonathan Kristof</div>
+              <div class="smallText">JonatanKristoff</div>
+
+            </div>
+
+          </div>
+
+
+          <div class="rotText">
+            #012920
+          </div>
+
+
+
 
         </div>
 
 
+ 
 
-        <div class="layInput">
-          <label class="label" for="emailAddress"> Email Address</label><br>
-          <input type="email" name="" class="eachInput" id="emailAddress">
-        </div>
+      </div>
 
-        <div class="layInput">
-          <label class="label" for="emailAddress"> Github Username</label><br>
-          <input type="email" name="" class="eachInput" id="gitUname">
-        </div>
-
-
-        <input class="subBtn" type="submit" value="Generate My Ticket">
-      </form>
-
-      Drag and drop or click to upload
-      Upload your photo (JPG or PNG, max size: 500KB).
-
-      Full Name
-
-      Email Address
-      example@email.com
-
-      GitHub Username
-      @yourusername
-
-      Generate My Ticket
 
       <!-- Form ends -->
 
@@ -128,24 +185,21 @@
     </div>
 
 
+      <span class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://drews.vercel.com">Fingersofgods</a>.
+      </span>
+
   </div>
 
 
   <!-- Generated tickets starts -->
 
-  Congrats, <!-- Full Name -->! Your ticket is ready.
 
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
 
   <!-- Generated tickets ends -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 
 
